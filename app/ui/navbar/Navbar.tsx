@@ -105,7 +105,7 @@ export const Navbar = (props: Props) => {
           <ul className="flex gap-6">
             {navItems.map((e, i) => (
               <li className={e.xClass} key={i}>
-                <Link href={'/'}>{e.title}</Link>
+                <Link href={e.link}>{e.title}</Link>
               </li>
             ))}
 
@@ -130,7 +130,7 @@ export const Navbar = (props: Props) => {
               >
                 {navItems.map((e, i) => (
                   <li className={`${e.yClass} my-3 w-[200px]`} key={i}>
-                    <Link href={'/'}>{e.title}</Link>
+                    <Link href={e.link}>{e.title}</Link>
                   </li>
                 ))}
               </ul>

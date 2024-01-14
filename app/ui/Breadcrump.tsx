@@ -12,7 +12,6 @@ import { IoIosArrowForward } from 'react-icons/io';
 type TBreadCrumbProps = {
   homeElement: ReactNode;
   separator: ReactNode;
-  containerClasses?: string;
   listClasses?: string;
   activeClasses?: string;
   capitalizeLinks?: boolean;
@@ -21,7 +20,6 @@ type TBreadCrumbProps = {
 const NextBreadcrumb = ({
   homeElement,
   separator,
-  containerClasses,
   listClasses,
   activeClasses,
   capitalizeLinks,
@@ -31,16 +29,13 @@ const NextBreadcrumb = ({
 
   return (
     <div>
-      <ul className={containerClasses}>
+      <ul className="flex items-center gap-0">
         <li className={listClasses}>
           <Link className="flex items-center gap-1" href={'/'}>
             {homeElement}
-            <span className="last:hidden">
-              <IoIosArrowForward />
-            </span>
           </Link>
         </li>
-        {pathNames.length > 0 && separator}
+        {pathNames.length > 0 && <IoIosArrowForward />}
         {pathNames.map((link, index) => {
           let href = `/${pathNames.slice(0, index + 1).join('/')}`;
           let itemClasses =

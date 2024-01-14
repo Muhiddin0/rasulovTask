@@ -1,33 +1,22 @@
-import Link from 'next/link';
-import Image from 'next/image';
+import React from 'react';
+import Hero from './ui/hero';
+import CatalogPage from './ui/catalog';
+import { ProductPiece } from './ui/product-piece/product-piece';
+import { Banner } from './ui/banner';
 
-// *** Components ***
-import { Header } from './ui/header/header';
-import { Navbar } from './ui/navbar/Navbar';
-import NextBreadcrumb from './ui/Breadcrump';
-import { Detailing } from './ui/detailing/detailing';
-import { More } from './ui/more/more';
-import { Footer } from './ui/footer/footer';
-import { SmilerProducts } from './ui/smiler-products/smiler-products';
+type Props = {};
 
-export default function Page() {
+const Page = (props: Props) => {
   return (
-    <>
-      <Header />
-      <Navbar />
-      <div className="container !mb-4 !mt-6 dark:text-slate-300 ">
-        <NextBreadcrumb
-          capitalizeLinks
-          containerClasses="bradcrump-container"
-          activeClasses="bradcrump-active"
-          separator={'s'}
-          homeElement={'home'}
-        />
+    <section className="bg-white  dark:bg-[var(--dark-bg)]">
+      <div className="container!py-10">
+        <CatalogPage />
+        <Hero />
+        <ProductPiece />
+        <Banner />
       </div>
-      <Detailing />
-      <More />
-      <SmilerProducts />
-      <Footer />
-    </>
+    </section>
   );
-}
+};
+
+export default Page;

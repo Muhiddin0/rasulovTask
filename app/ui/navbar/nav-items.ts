@@ -22,7 +22,7 @@ export const navItems: {
     yClass: 'block min-[350px]:hidden',
   },
   {
-    link: '/favotite',
+    link: '/favorites',
     title: 'My Favorite Stores',
     xClass: 'hidden min-[500px]:block',
     yClass: 'block min-[500px]:hidden',
@@ -42,12 +42,6 @@ export const navItems: {
   {
     link: '/shipping-info',
     title: 'Shipping Info',
-    xClass: 'hidden lg:block',
-    yClass: 'block lg:hidden',
-  },
-  {
-    link: '/bevendor',
-    title: 'Be a vendor',
     xClass: 'hidden lg:block',
     yClass: 'block lg:hidden',
   },

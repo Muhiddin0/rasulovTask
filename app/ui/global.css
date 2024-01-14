@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --transparent: #000000a3;
+  -dark-bg: #0f111a;
+}
+
 .container {
   padding: 0 2.4rem;
   margin: 0 auto;
@@ -10,6 +15,35 @@
 body {
   @apply dark:!bg-[#0f111a];
   transition: 0.1s;
+}
+
+@media (max-width: 1024px) {
+  .filter {
+    visibility: hidden;
+    opacity: 0;
+    transition: 250ms;
+  }
+  .filter.active {
+    visibility: visible;
+    opacity: 1;
+  }
+  .filter > div {
+    position: relative;
+    left: -320px;
+    transition: 300ms;
+  }
+  .filter.active > div {
+    left: 0px;
+  }
+}
+
+/* Table */
+.table-style {
+  @apply border-b-[1px] border-slate-300 py-2;
+}
+
+.checkout-table td {
+  padding: 10px 0 !important;
 }
 
 .more-item {
@@ -25,7 +59,6 @@ body {
   @apply bg-blue-500;
 }
 
-/* .review-header {} */
 .header-button {
   transition: 250ms;
   opacity: 0;
@@ -46,6 +79,8 @@ body {
   visibility: visible;
   opacity: 1;
 }
+
+/* utils */
 
 input[type='number'] {
   -moz-appearance: textfield;
