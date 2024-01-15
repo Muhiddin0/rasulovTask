@@ -7,8 +7,7 @@ import logo from '@/assets/images/logo.png';
 const Logo = () => {
   return (
     <Link href={'/'} className="gap flex items-center gap-2">
-      <Image width={30} src={logo} alt="" />
-      <strong className="text-lg font-bold text-gray-400">phoenix</strong>
+      <Image width={100} src={logo} alt="" />
     </Link>
   );
 };

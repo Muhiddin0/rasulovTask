@@ -11,6 +11,12 @@
   padding: 0 2.4rem;
   margin: 0 auto;
 }
+.profile-bar {
+  display: none;
+}
+.profile-bar.active {
+  display: block;
+}
 
 body {
   @apply dark:!bg-[#0f111a];
