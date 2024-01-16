@@ -26,7 +26,7 @@ const MySwiper = () => {
       .then((data) => {
         setProducts(data);
       });
-  }, [products]);
+  }, []);
 
   const [swiper, setSwiper] = useState<typeof Swiper>();
 

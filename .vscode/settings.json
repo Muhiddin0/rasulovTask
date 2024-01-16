@@ -20,7 +20,6 @@
   "[html]": {
     "editor.defaultFormatter": "vscode.html-language-features"
   },
-  "security.workspace.trust.untrustedFiles": "open",
   "[javascriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -35,8 +34,6 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "typescript.updateImportsOnFileMove.enabled": "always",
-  "window.titleBarStyle": "custom",
-  "settingsSync.ignoredSettings": [],
   "vscode_vibrancy.opacity": 0.5,
   "vscode_vibrancy.type": "dark",
   "vscode_vibrancy.theme": "Catppuccin Mocha",

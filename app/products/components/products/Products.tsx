@@ -1,6 +1,9 @@
 'use client';
 
 import React, { useEffect, useState } from 'react';
+
+import axios from 'axios';
+
 import { ProductItems } from './products-items';
 import { CiFilter } from 'react-icons/ci';
 import { ProductType } from '@/app/interfaces';
@@ -11,13 +14,16 @@ export const Products = (props: Props) => {
   const [products, setProducts] = useState<ProductType[] | false>(false);
 
   useEffect(() => {
-    fetch('https://fakestoreapi.com/products')
-      .then((response) => response.json())
-      .then((data) => {
-        setProducts(data);
-        console.log(data);
-      });
-  }, [products]);
+    axios.get('https://fakestoreapi.com/products').then((response) => {
+      let { data } = response;
+      console.log(data);
+      setProducts(data);
+    });
+
+    return () => {
+      products;
+    };
+  }, []);
 
   const toggler = () => {
     document.querySelector('.filter')?.classList.toggle('active');

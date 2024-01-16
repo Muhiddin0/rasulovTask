@@ -26,9 +26,10 @@ export const SliderBanner = (props: Props) => {
     fetch('https://fakestoreapi.com/products')
       .then((response) => response.json())
       .then((data) => {
+        console.log(data);
         setProducts(data);
       });
-  }, [products]);
+  }, []);
 
   const [swiper, setSwiper] = useState<typeof Swiper>();
 
