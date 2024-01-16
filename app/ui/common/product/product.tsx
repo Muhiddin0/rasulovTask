@@ -11,7 +11,7 @@ import { StarIcon } from '@heroicons/react/24/solid';
 
 const Product: FC<{ product: ProductType }> = ({ product }) => {
   return (
-    <Link className="w-56" href={`/product/${product.id}`}>
+    <Link className="w-56" href={`/products/${product.id}`}>
       <div className="group flex h-96 flex-col overflow-hidden rounded-lg border-gray-200 border-opacity-60 transition-transform duration-200 ease-out">
         <div className="relative mb-1 flex h-80 w-56 flex-1 items-center justify-center rounded-lg border dark:border-slate-700">
           <div className="relative flex h-52 w-28 items-center justify-center ">
