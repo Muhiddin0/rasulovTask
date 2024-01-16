@@ -20,10 +20,10 @@ const Page = (props: Props) => {
         <Hero />
         <div className="container">
           <div className="grid grid-cols-12">
-            <div className="col-span-9">
+            <div className="col-span-12 xl:col-span-9">
               <SliderBanner />
             </div>
-            <div className="col-span-3 flex items-center justify-center p-2">
+            <div className="col-span-3 hidden items-center justify-center p-2 xl:flex">
               <Image src={homeBanner} alt="" />
             </div>
           </div>
