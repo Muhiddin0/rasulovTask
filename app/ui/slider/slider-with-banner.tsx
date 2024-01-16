@@ -59,7 +59,7 @@ export const SliderBanner = (props: Props) => {
         slidesPerView={1}
         navigation
         pagination={{ clickable: true }}
-        onSwiper={(swiper) => setSwiper(swiper)}
+        // onSwiper={(swiper) => setSwiper(swiper)}
         className="!pb-6 !pt-2"
         breakpoints={{
           450: {

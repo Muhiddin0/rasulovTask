@@ -57,7 +57,7 @@ const MySwiper = () => {
           slidesPerView={1}
           navigation
           pagination={{ clickable: true }}
-          onSwiper={(swiper) => setSwiper(swiper)}
+          // onSwiper={(swiper) => setSwiper(swiper)}
           className="!pb-6 !pt-4"
           breakpoints={{
             450: {
