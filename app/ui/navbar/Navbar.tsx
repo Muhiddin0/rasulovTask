@@ -14,6 +14,7 @@ import { IoMenuOutline } from 'react-icons/io5';
 import { MdExpandMore } from 'react-icons/md';
 import { TbWorld } from 'react-icons/tb';
 import { IoIosArrowForward } from 'react-icons/io';
+import ActiveLink from '../common/ActiveLink';
 
 type Props = {};
 
@@ -105,7 +106,7 @@ export const Navbar = (props: Props) => {
           <ul className="flex gap-6">
             {navItems.map((e, i) => (
               <li className={e.xClass} key={i}>
-                <Link href={e.link}>{e.title}</Link>
+                <ActiveLink href={e.link}>{e.title}</ActiveLink>
               </li>
             ))}
 

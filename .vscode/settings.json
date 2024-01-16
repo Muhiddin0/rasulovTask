@@ -1,0 +1,46 @@
+{
+    "workbench.iconTheme": "material-icon-theme",
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true,
+    "editor.linkedEditing": true,
+    "editor.fontFamily": "JetBrains Mono",
+    "files.autoSave": "onFocusChange",
+    "workbench.colorTheme": "Ayu Dark (Legacy)",
+    "editor.fontLigatures": true,
+    "editor.indentSize": "tabSize",
+    "tailwindCSS.includeLanguages": {
+      "typescriptreact": "vue"
+    },
+    "[vue]": {
+      "editor.defaultFormatter": "Vue.volar"
+    },
+    "files.associations": {
+      "*.html": "html"
+    },
+    "[html]": {
+      "editor.defaultFormatter": "vscode.html-language-features"
+    },
+    "security.workspace.trust.untrustedFiles": "open",
+    "[javascriptreact]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "files.exclude": {
+      "**/.git": false
+    },
+    "editor.cursorBlinking": "expand",
+    "editor.cursorSmoothCaretAnimation": "on",
+    "editor.tabSize": 2,
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "[typescriptreact]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "window.titleBarStyle": "custom",
+    "settingsSync.ignoredSettings": [],
+    "vscode_vibrancy.opacity": 0.5,
+    "vscode_vibrancy.type": "dark",
+    "vscode_vibrancy.theme": "Catppuccin Mocha",
+    "workbench.editorAssociations": {
+      "*.sqlite3": "default"
+    }
+  }

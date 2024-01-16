@@ -3,6 +3,12 @@ import Hero from './ui/hero';
 import CatalogPage from './ui/catalog';
 import { ProductPiece } from './ui/product-piece/product-piece';
 import { Banner } from './ui/banner';
+import MySlider from './ui/slider/slider';
+import { SliderBanner } from './ui/slider/slider-with-banner';
+import Image from 'next/image';
+
+// *** Assets ***
+import homeBanner from '@/assets/images/banner-home.png';
 
 type Props = {};
 
@@ -12,7 +18,18 @@ const Page = (props: Props) => {
       <div className="container!py-10">
         <CatalogPage />
         <Hero />
-        <ProductPiece />
+        <div className="container">
+          <div className="grid grid-cols-12">
+            <div className="col-span-9">
+              <SliderBanner />
+            </div>
+            <div className="col-span-3 flex items-center justify-center p-2">
+              <Image src={homeBanner} alt="" />
+            </div>
+          </div>
+        </div>
+        <MySlider />
+        {/* <ProductPiece /> */}
         <Banner />
       </div>
     </section>

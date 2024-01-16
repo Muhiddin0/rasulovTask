@@ -47,26 +47,6 @@ export const ProductPiece = async (props: Props) => {
               />
             </svg>
           </div>
-          <div className="flex items-center justify-center text-blue-600 transition-all hover:underline dark:text-blue-300">
-            <Link href={'/deals'}>
-              <p className="text-sm font-medium">Explore more</p>
-            </Link>
-
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              strokeWidth={1.5}
-              stroke="currentColor"
-              className="h-5 w-5"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="m8.25 4.5 7.5 7.5-7.5 7.5"
-              />
-            </svg>
-          </div>
         </div>
 
         <div className="flex flex-grow-[2] grid-cols-1 grid-rows-1 flex-col items-center justify-center gap-4 gap-y-12 sm:grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">

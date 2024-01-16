@@ -1,4 +1,6 @@
 import '@/app/ui/global.css';
+import '@/app/loader.css';
+
 import { NunitoSans } from '@/app/ui/fonts';
 import { Header } from './ui/header/header';
 import { Navbar } from './ui/navbar/Navbar';
@@ -11,7 +13,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${NunitoSans.className} bg-[#EFF2F6] antialiased`}>
+      <body
+        className={`${NunitoSans.className} bg-[#EFF2F6] antialiased dark:text-slate-100`}
+      >
         <Header />
         <Navbar />
         {children}
