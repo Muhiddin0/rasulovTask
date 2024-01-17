@@ -62,7 +62,9 @@ const CatalogPage = () => {
                   className="inline-block rounded-md bg-slate-100 p-3 transition-all hover:bg-blue-400 hover:text-white"
                   href={e.link}
                 >
-                  <e.icon size={30} />
+                  <span className="text-[30px]">
+                    <e.icon />
+                  </span>
                 </Link>
               </SwiperSlide>
             ))}
