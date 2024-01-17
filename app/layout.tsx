@@ -1,5 +1,8 @@
+// Import Swiper styles
 import '@/app/ui/global.css';
-import '@/app/loader.css';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
 
 import { NunitoSans } from '@/app/ui/fonts';
 import { Header } from './ui/header/header';

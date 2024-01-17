@@ -12,7 +12,7 @@ export const Footer = (props: Props) => {
           <div className="grid grid-cols-8 gap-4">
             <div className="col-span-8 2xl:col-span-4">
               <Logo />
-              <p>
+              <p className="mt-3">
                 Phoenix is an admin dashboard template with fascinating features
                 and amazing layout. The template is responsive to all major
                 browsers and is compatible with all available devices and screen
@@ -90,15 +90,6 @@ export const Footer = (props: Props) => {
           </div>
         </div>
       </footer>
-      <div className="container flex flex-wrap justify-between border-t-[1px] border-slate-300 !py-4 dark:border-gray-600 dark:text-slate-300">
-        <p>
-          Thank you for creating with Phoenix React|2024 ©{' '}
-          <Link className="text-blue-400" href={'/'}>
-            Themewagon
-          </Link>
-        </p>
-        <p>v1.2.0</p>
-      </div>
     </>
   );
 };

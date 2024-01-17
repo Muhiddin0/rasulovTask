@@ -1,6 +1,6 @@
 import React from 'react';
 import Hero from './ui/hero';
-import CatalogPage from './ui/catalog';
+import CatalogPage from './ui/catalog/catalog';
 import { ProductPiece } from './ui/product-piece/product-piece';
 import { Banner } from './ui/banner';
 import MySlider from './ui/slider/slider';

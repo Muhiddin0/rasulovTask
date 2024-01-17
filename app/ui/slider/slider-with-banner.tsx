@@ -1,13 +1,8 @@
 'use client';
 
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination } from 'swiper/modules';
-
-// Import Swiper styles
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
 
 import { ProductType } from '@/app/interfaces';
 import Product from '../common/product/product';
@@ -16,6 +11,9 @@ import Link from 'next/link';
 // *** Icons ***
 import { IoIosArrowForward } from 'react-icons/io';
 import { IoFlash } from 'react-icons/io5';
+
+// *** UI ***
+import { SliderButtons } from './slider-buttons';
 
 type Props = {};
 
@@ -60,8 +58,8 @@ export const SliderBanner = (props: Props) => {
         slidesPerView={1}
         navigation
         pagination={{ clickable: true }}
-        // onSwiper={(swiper) => setSwiper(swiper)}
-        className="!pb-6 !pt-2"
+        className="!pb-12 !pt-2"
+        loop={true}
         breakpoints={{
           450: {
             width: 450,
@@ -78,6 +76,7 @@ export const SliderBanner = (props: Props) => {
             <Product product={product} />
           </SwiperSlide>
         ))}
+        <SliderButtons />
       </Swiper>
     </div>
   );

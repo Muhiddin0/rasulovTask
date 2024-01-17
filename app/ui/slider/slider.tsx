@@ -4,11 +4,6 @@ import React, { useEffect, useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination } from 'swiper/modules';
 
-// Import Swiper styles
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
-
 import { ProductType } from '@/app/interfaces';
 import Product from '../common/product/product';
 import Link from 'next/link';
@@ -16,6 +11,7 @@ import Link from 'next/link';
 // *** Icons ***
 import { IoFlash } from 'react-icons/io5';
 import { IoIosArrowForward } from 'react-icons/io';
+import { SliderButtons } from './slider-buttons';
 
 const MySwiper = () => {
   const [products, setProducts] = useState<ProductType[] | []>([]);
@@ -56,9 +52,9 @@ const MySwiper = () => {
           spaceBetween={50}
           slidesPerView={1}
           navigation
+          loop={true}
           pagination={{ clickable: true }}
-          // onSwiper={(swiper) => setSwiper(swiper)}
-          className="!pb-6 !pt-4"
+          className="!pb-12 !pt-4"
           breakpoints={{
             450: {
               width: 450,
@@ -68,6 +64,18 @@ const MySwiper = () => {
               width: 800,
               slidesPerView: 3,
             },
+            1024: {
+              width: 1024,
+              slidesPerView: 4,
+            },
+            1280: {
+              width: 1280,
+              slidesPerView: 5,
+            },
+            1536: {
+              width: 1536,
+              slidesPerView: 5,
+            },
           }}
         >
           {products.map((product) => (
@@ -75,6 +83,7 @@ const MySwiper = () => {
               <Product product={product} />
             </SwiperSlide>
           ))}
+          <SliderButtons />
         </Swiper>
       </div>
     </section>

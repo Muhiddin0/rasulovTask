@@ -12,6 +12,7 @@ import { FaStar } from 'react-icons/fa';
 // *** Components ***
 import { Star } from '@/app/ui/common';
 import { ProductType } from '@/app/interfaces';
+import Link from 'next/link';
 
 export const ProductItems = ({
   category,
@@ -24,14 +25,16 @@ export const ProductItems = ({
   title,
 }: ProductType) => {
   return (
-    <div className="flex flex-col">
-      <Image
-        width={150}
-        height={150}
-        className="h-[200px] w-full rounded-md border-[1px] border-slate-300  object-contain p-3"
-        src={image}
-        alt=""
-      />
+    <Link href={'/products/' + id} className="product-hover flex flex-col">
+      <div className="h-[200px] w-full rounded-md border-[1px] border-slate-300 p-3">
+        <Image
+          width={150}
+          height={150}
+          className="h-full w-full object-contain"
+          src={image}
+          alt=""
+        />
+      </div>
       <p className="my-3 text-sm">
         PlayStation 5 DualSense Wireless Controller
       </p>
@@ -44,6 +47,6 @@ export const ProductItems = ({
         </div>
         <p className="text-slate-500">2 colors</p>
       </div>
-    </div>
+    </Link>
   );
 };

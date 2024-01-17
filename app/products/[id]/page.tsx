@@ -5,8 +5,8 @@ import Image from 'next/image';
 import NextBreadcrumb from '../../ui/Breadcrump';
 import { Detailing } from '../../ui/detailing/detailing';
 import { More } from '../../ui/more/more';
-import { Footer } from '../../ui/footer/footer';
 import { SmilerProducts } from '../../ui/smiler-products/smiler-products';
+import MySwiper from '@/app/ui/slider/slider';
 
 export default function Page() {
   return (
@@ -21,7 +21,8 @@ export default function Page() {
       </div>
       <Detailing />
       <More />
-      <SmilerProducts />
+      <MySwiper />
+      {/* <SmilerProducts /> */}
     </>
   );
 }

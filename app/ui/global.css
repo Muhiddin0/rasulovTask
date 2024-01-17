@@ -12,6 +12,20 @@
   margin: 0 auto;
 }
 
+.product-hover img {
+  transition: 250ms;
+  scale: 1;
+}
+.product-hover:hover img {
+  transition: 250ms;
+  scale: 1.1;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  display: none !important;
+}
+
 .disable {
   display: none;
 }

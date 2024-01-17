@@ -7,7 +7,7 @@ import logo from '@/assets/images/logo.png';
 const Logo = () => {
   return (
     <Link href={'/'} className="gap flex items-center gap-2">
-      <Image width={100} src={logo} alt="" />
+      <Image width={160} src={logo} alt="" />
     </Link>
   );
 };

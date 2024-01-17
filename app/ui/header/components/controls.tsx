@@ -118,12 +118,6 @@ export const Controls = (props: Props) => {
             </li>
             <li className="flex items-center gap-1">
               <span>
-                <TfiDashboard />
-              </span>
-              <span>Dashboard</span>
-            </li>
-            <li className="flex items-center gap-1">
-              <span>
                 <GrSecure />
               </span>
               <span>Post & Activite</span>

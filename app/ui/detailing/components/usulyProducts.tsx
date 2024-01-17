@@ -79,7 +79,7 @@ export const UsulyProducts = (props: Props) => {
           <b>$958.99</b>
         </div>
 
-        <button className="flex w-[240px] items-center justify-center gap-2 rounded-md border-[1px] border-orange-500 px-2 py-2 text-orange-500">
+        <button className="flex w-[240px] items-center justify-center gap-2 rounded-md border-[1px] border-blue-500 px-2 py-2 text-blue-500 transition-all hover:opacity-60">
           Add 3 items to card
           <span>
             <FiShoppingCart />

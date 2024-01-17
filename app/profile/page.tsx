@@ -112,7 +112,6 @@ const Page = (props: Props) => {
           <div className="col-span-5 rounded-md border-[1px] border-slate-400 bg-white p-6 dark:bg-[var(--dark-bg)] xl:col-span-3">
             <h1 className="text-2xl font-bold">Default Address</h1>
             <BorderLink />
-
             <div className="flex justify-between">
               <span className="text-lg font-bold">Addres</span>
               <p className="text-bold text-slate-500">

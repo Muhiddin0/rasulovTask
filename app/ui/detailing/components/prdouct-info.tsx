@@ -41,7 +41,7 @@ export const ProductInfo = () => {
         <s className="text-decoration-line-through mb-0 me-3 text-slate-400">
           $1,499.99
         </s>
-        <b className="text-orange-500">10% off</b>
+        <b className="text-blue-500">10% off</b>
       </div>
 
       <p className="text-[25px] text-green-500">In stock</p>

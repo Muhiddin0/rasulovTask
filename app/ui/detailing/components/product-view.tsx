@@ -43,13 +43,13 @@ export const ProductView = (props: Props) => {
         </div>
       </div>
       <div className="my-4 flex flex-wrap gap-5">
-        <button className="flex flex-grow-[1] items-center justify-center gap-2 rounded-full border-[1px] border-orange-500 px-5 py-3 text-center  text-xl text-orange-500 transition-all hover:opacity-70">
+        <button className="flex flex-grow-[1] items-center justify-center gap-2 rounded-full border-[1px] border-blue-500 px-5 py-3 text-center  text-xl text-blue-500 transition-all hover:opacity-70">
           <span>
             <CiHeart />
           </span>
           <span>Add to wishlist</span>
         </button>
-        <button className="flex flex-grow-[1] items-center justify-center gap-2 rounded-full bg-orange-500 px-5 py-3  text-center text-xl text-white transition-all hover:opacity-70">
+        <button className="flex flex-grow-[1] items-center justify-center gap-2 rounded-full bg-blue-500 px-5 py-3  text-center text-xl text-white transition-all hover:opacity-70">
           <span>
             <FiShoppingCart />
           </span>

@@ -5,7 +5,7 @@
   "editor.linkedEditing": true,
   "editor.fontFamily": "JetBrains Mono",
   "files.autoSave": "onFocusChange",
-  "workbench.colorTheme": "Ayu Dark (Legacy)",
+  "workbench.colorTheme": "Ayu Mirage (Legacy)",
   "editor.fontLigatures": true,
   "editor.indentSize": "tabSize",
   "tailwindCSS.includeLanguages": {

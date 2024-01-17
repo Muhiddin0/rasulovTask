@@ -46,10 +46,10 @@ export const DataTable = (props: Props) => {
             <td className="table-style">42</td>
             <td className="table-style">$23</td>
             <td className="flex items-center justify-end gap-2 border-b-[1px] border-slate-300 py-4">
-              <button className="text-slate-500">
-                <MdDelete />
+              <button className="text-slate-500 transition-all hover:opacity-80">
+                <MdDelete size={25} />
               </button>
-              <button className="flex items-center rounded-md bg-blue-500 px-4 py-2 text-center text-white">
+              <button className="flex items-center rounded-md bg-blue-500 px-4 py-2 text-center text-white transition-all hover:opacity-80">
                 <MdOutlineShoppingCart />
                 <span>add to card</span>
               </button>
@@ -74,10 +74,206 @@ export const DataTable = (props: Props) => {
             <td className="table-style">42</td>
             <td className="table-style">$23</td>
             <td className="flex items-center justify-end gap-2 border-b-[1px] border-slate-300 py-4">
-              <button className="text-slate-500">
-                <MdDelete />
+              <button className="text-slate-500 transition-all hover:opacity-80">
+                <MdDelete size={25} />
               </button>
-              <button className="flex items-center rounded-md bg-blue-500 px-4 py-2 text-center text-white">
+              <button className="flex items-center rounded-md bg-blue-500 px-4 py-2 text-center text-white transition-all hover:opacity-80">
+                <MdOutlineShoppingCart />
+                <span>add to card</span>
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td className="table-style">
+              <Image
+                className="rounded-md border-[1px] border-slate-300 p-2"
+                width={50}
+                height={50}
+                src={pc}
+                alt=""
+              />
+            </td>
+            <td className="table-style">
+              <Link className="text-blue-500" href="/">
+                Fitbit Sense Advanced Smartwatch with
+              </Link>
+            </td>
+            <td className="table-style">Pure matte black</td>
+            <td className="table-style">42</td>
+            <td className="table-style">$23</td>
+            <td className="flex items-center justify-end gap-2 border-b-[1px] border-slate-300 py-4">
+              <button className="text-slate-500 transition-all hover:opacity-80">
+                <MdDelete size={25} />
+              </button>
+              <button className="flex items-center rounded-md bg-blue-500 px-4 py-2 text-center text-white transition-all hover:opacity-80">
+                <MdOutlineShoppingCart />
+                <span>add to card</span>
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td className="table-style">
+              <Image
+                className="rounded-md border-[1px] border-slate-300 p-2"
+                width={50}
+                height={50}
+                src={pc}
+                alt=""
+              />
+            </td>
+            <td className="table-style">
+              <Link className="text-blue-500" href="/">
+                Fitbit Sense Advanced Smartwatch with
+              </Link>
+            </td>
+            <td className="table-style">Pure matte black</td>
+            <td className="table-style">42</td>
+            <td className="table-style">$23</td>
+            <td className="flex items-center justify-end gap-2 border-b-[1px] border-slate-300 py-4">
+              <button className="text-slate-500 transition-all hover:opacity-80">
+                <MdDelete size={25} />
+              </button>
+              <button className="flex items-center rounded-md bg-blue-500 px-4 py-2 text-center text-white transition-all hover:opacity-80">
+                <MdOutlineShoppingCart />
+                <span>add to card</span>
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td className="table-style">
+              <Image
+                className="rounded-md border-[1px] border-slate-300 p-2"
+                width={50}
+                height={50}
+                src={pc}
+                alt=""
+              />
+            </td>
+            <td className="table-style">
+              <Link className="text-blue-500" href="/">
+                Fitbit Sense Advanced Smartwatch with
+              </Link>
+            </td>
+            <td className="table-style">Pure matte black</td>
+            <td className="table-style">42</td>
+            <td className="table-style">$23</td>
+            <td className="flex items-center justify-end gap-2 border-b-[1px] border-slate-300 py-4">
+              <button className="text-slate-500 transition-all hover:opacity-80">
+                <MdDelete size={25} />
+              </button>
+              <button className="flex items-center rounded-md bg-blue-500 px-4 py-2 text-center text-white transition-all hover:opacity-80">
+                <MdOutlineShoppingCart />
+                <span>add to card</span>
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td className="table-style">
+              <Image
+                className="rounded-md border-[1px] border-slate-300 p-2"
+                width={50}
+                height={50}
+                src={pc}
+                alt=""
+              />
+            </td>
+            <td className="table-style">
+              <Link className="text-blue-500" href="/">
+                Fitbit Sense Advanced Smartwatch with
+              </Link>
+            </td>
+            <td className="table-style">Pure matte black</td>
+            <td className="table-style">42</td>
+            <td className="table-style">$23</td>
+            <td className="flex items-center justify-end gap-2 border-b-[1px] border-slate-300 py-4">
+              <button className="text-slate-500 transition-all hover:opacity-80">
+                <MdDelete size={25} />
+              </button>
+              <button className="flex items-center rounded-md bg-blue-500 px-4 py-2 text-center text-white transition-all hover:opacity-80">
+                <MdOutlineShoppingCart />
+                <span>add to card</span>
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td className="table-style">
+              <Image
+                className="rounded-md border-[1px] border-slate-300 p-2"
+                width={50}
+                height={50}
+                src={pc}
+                alt=""
+              />
+            </td>
+            <td className="table-style">
+              <Link className="text-blue-500" href="/">
+                Fitbit Sense Advanced Smartwatch with
+              </Link>
+            </td>
+            <td className="table-style">Pure matte black</td>
+            <td className="table-style">42</td>
+            <td className="table-style">$23</td>
+            <td className="flex items-center justify-end gap-2 border-b-[1px] border-slate-300 py-4">
+              <button className="text-slate-500 transition-all hover:opacity-80">
+                <MdDelete size={25} />
+              </button>
+              <button className="flex items-center rounded-md bg-blue-500 px-4 py-2 text-center text-white transition-all hover:opacity-80">
+                <MdOutlineShoppingCart />
+                <span>add to card</span>
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td className="table-style">
+              <Image
+                className="rounded-md border-[1px] border-slate-300 p-2"
+                width={50}
+                height={50}
+                src={pc}
+                alt=""
+              />
+            </td>
+            <td className="table-style">
+              <Link className="text-blue-500" href="/">
+                Fitbit Sense Advanced Smartwatch with
+              </Link>
+            </td>
+            <td className="table-style">Pure matte black</td>
+            <td className="table-style">42</td>
+            <td className="table-style">$23</td>
+            <td className="flex items-center justify-end gap-2 border-b-[1px] border-slate-300 py-4">
+              <button className="text-slate-500 transition-all hover:opacity-80">
+                <MdDelete size={25} />
+              </button>
+              <button className="flex items-center rounded-md bg-blue-500 px-4 py-2 text-center text-white transition-all hover:opacity-80">
+                <MdOutlineShoppingCart />
+                <span>add to card</span>
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td className="table-style">
+              <Image
+                className="rounded-md border-[1px] border-slate-300 p-2"
+                width={50}
+                height={50}
+                src={pc}
+                alt=""
+              />
+            </td>
+            <td className="table-style">
+              <Link className="text-blue-500" href="/">
+                Fitbit Sense Advanced Smartwatch with
+              </Link>
+            </td>
+            <td className="table-style">Pure matte black</td>
+            <td className="table-style">42</td>
+            <td className="table-style">$23</td>
+            <td className="flex items-center justify-end gap-2 border-b-[1px] border-slate-300 py-4">
+              <button className="text-slate-500 transition-all hover:opacity-80">
+                <MdDelete size={25} />
+              </button>
+              <button className="flex items-center rounded-md bg-blue-500 px-4 py-2 text-center text-white transition-all hover:opacity-80">
                 <MdOutlineShoppingCart />
                 <span>add to card</span>
               </button>
