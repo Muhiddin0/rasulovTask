@@ -15,7 +15,6 @@ const ActiveLink = ({ href, children }: { href: string; children: string }) => {
         'text-blue-500': isActive,
       })}
       href={href}
-      legacyBehavior
       passHref
     >
       {children}

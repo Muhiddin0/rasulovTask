@@ -23,7 +23,7 @@ export const Reviews = (props: Props) => {
           <IoIosStar size={30} />
         </div>
         <span>6548 ratings and 567 reviews</span>
-        <button className="self-end rounded-full bg-blue-500 px-5 py-3 text-center text-white transition-all hover:bg-blue-400">
+        <button className="self-end rounded-full bg-blue-500 px-5 py-3 text-center text-white shadow-md shadow-blue-500 transition-all hover:bg-blue-300">
           Rate this product
         </button>
       </div>

@@ -4,12 +4,16 @@
 
 :root {
   --transparent: #000000a3;
-  -dark-bg: #0f111a;
+  --dark-bg: #0f111a;
 }
 
 .container {
   padding: 0 2.4rem;
   margin: 0 auto;
+}
+
+.swiper-pagination-bullet {
+  @apply dark:bg-slate-300;
 }
 
 .product-hover img {

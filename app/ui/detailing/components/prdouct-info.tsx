@@ -22,7 +22,7 @@ export const ProductInfo = () => {
         </div>
         <p className="text-blue-500">6548 People rated and reviewed</p>
       </div>
-      <h1 className="mt-4 text-[25px] font-bold sm:text-lg md:text-4xl">
+      <h1 className="mt-4 text-[25px] font-bold sm:text-lg md:text-2xl">
         24" iMac® with Retina 4.5K display - Apple M1 8GB Memory - 256GB SSD -
         w/Touch ID (Latest Model) - Blue
       </h1>
@@ -36,7 +36,7 @@ export const ProductInfo = () => {
         </Link>
       </div>
 
-      <div className="flex flex-wrap gap-3 text-[40px]">
+      <div className="flex flex-wrap gap-3 text-lg">
         <b>$1,349.99</b>
         <s className="text-decoration-line-through mb-0 me-3 text-slate-400">
           $1,499.99
@@ -86,7 +86,7 @@ export const ProductInfo = () => {
           <div className="flex flex-col">
             <b>Size:</b>
             <div className="mt-2 flex items-center gap-2">
-              <select className="rounded-md">
+              <select className="rounded-md bg-white dark:bg-slate-800">
                 <option value="18">18</option>
                 <option value="22">22</option>
                 <option value="44">44</option>
@@ -99,11 +99,11 @@ export const ProductInfo = () => {
           <div>
             <b>Quantity:</b>
             <div className="mt-2 flex items-center">
-              <button className="h-[40px] w-[40px] rounded-md border-[1px] border-slate-400 text-center text-[20px] text-blue-500">
+              <button className="h-[40px] w-[40px] rounded-md border-[1px] border-slate-400 bg-white text-center text-[20px] text-blue-500 dark:bg-slate-800">
                 -
               </button>
               <span className="w-[60px] text-center">8</span>
-              <button className="h-[40px] w-[40px] rounded-md border-[1px] border-slate-400 text-center text-[20px] text-blue-500">
+              <button className="h-[40px] w-[40px] rounded-md border-[1px] border-slate-400 bg-white text-center text-[20px] text-blue-500 dark:bg-slate-800">
                 +
               </button>
             </div>

@@ -26,7 +26,7 @@ const Page = (props: Props) => {
 
   return (
     <section>
-      <div className="container !py-10 dark:text-slate-500">
+      <div className="container !py-10">
         <div className="flex flex-wrap items-end justify-between gap-4">
           <div>
             <NextBreadcrumb

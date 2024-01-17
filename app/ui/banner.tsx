@@ -18,7 +18,7 @@ export const Banner = (props: Props) => {
           <h1 className="text-center text-2xl  font-bold md:text-start">
             Become a <span className="text-blue-500">member</span> today!
           </h1>
-          <button className="mt-3 rounded-md bg-blue-500 px-4 py-2 text-center text-white">
+          <button className="mt-3 rounded-md bg-blue-500  px-4 py-2 text-center text-white shadow-md shadow-blue-500">
             Sign Up
           </button>
         </div>

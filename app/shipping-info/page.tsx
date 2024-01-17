@@ -22,30 +22,20 @@ const Page = (props: Props) => {
         </div>
         <div className="grid w-full grid-cols-5 gap-x-2 gap-y-6">
           <form className="col-span-5 my-4 lg:col-span-3" action="">
-            <h1 className="my-4 text-2xl font-bold">Shipping Info</h1>
-            <label className="w-full" htmlFor="">
-              <b>Full name</b>
-              <input
-                className="mt-1 w-full rounded-md border-[1px] border-slate-300 p-1 dark:bg-gray-900"
-                placeholder="Full name"
-                type="text"
-              />
-            </label>
-
             <div className="my-4 flex flex-col gap-2 md:flex-row">
               <label className="flex-grow-[1]" htmlFor="">
-                <b>Email</b>
+                <b>First name</b>
                 <input
                   className="mt-1 w-full flex-grow-[1] rounded-md border-[1px] border-slate-300 p-1 dark:bg-gray-900"
-                  placeholder="Email"
+                  placeholder="First name"
                   type="email"
                 />
               </label>
               <label className="flex-grow-[1]" htmlFor="">
-                <b>Phone</b>
+                <b>Last name</b>
                 <input
                   className="mt-1 w-full flex-grow-[1] rounded-md border-[1px] border-slate-300 p-1  dark:bg-gray-900"
-                  placeholder="Phone"
+                  placeholder="Last name"
                   type="text"
                 />
               </label>
@@ -125,7 +115,7 @@ const Page = (props: Props) => {
             </div>
 
             <div className="mt-12 flex flex-wrap gap-5">
-              <button className="min-w-[200px] rounded-md bg-blue-500 p-2 text-center text-white transition-all hover:opacity-70">
+              <button className="min-w-[200px] rounded-md bg-blue-500 p-2 text-center text-white shadow-md shadow-md shadow-blue-500 shadow-blue-500 transition-all hover:opacity-70">
                 save
               </button>
               <button className="min-w-[200px] rounded-md border-[1px] border-slate-500 p-2 text-center text-slate-500 transition-all hover:opacity-70">

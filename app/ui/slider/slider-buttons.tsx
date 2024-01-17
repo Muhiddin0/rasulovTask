@@ -13,13 +13,13 @@ export const SliderButtons = (props: Props) => {
   return (
     <>
       <button
-        className="absolute right-0 top-[30%] z-20 transition-all hover:scale-110 active:scale-75"
+        className="absolute right-0 top-[30%] z-20 rounded-full bg-white shadow-md transition-all hover:scale-110 active:scale-75 dark:bg-slate-700"
         onClick={() => slider.slideNext()}
       >
         <IoIosArrowRoundForward size={40} />
       </button>
       <button
-        className="absolute left-0 top-[30%] z-20 transition-all hover:scale-110 active:scale-75"
+        className="absolute left-0 top-[30%] z-20 rounded-full bg-white shadow-md transition-all hover:scale-110 active:scale-75 dark:bg-slate-700"
         onClick={() => slider.slidePrev()}
       >
         <IoIosArrowRoundBack size={40} />

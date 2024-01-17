@@ -59,7 +59,7 @@ const CatalogPage = () => {
                 className="!flex items-center justify-center"
               >
                 <Link
-                  className="inline-block rounded-md bg-slate-100 p-3 transition-all hover:bg-blue-400 hover:text-white"
+                  className="inline-block rounded-md bg-slate-100 p-3 transition-all hover:!bg-blue-400 hover:text-white dark:bg-slate-800 "
                   href={e.link}
                 >
                   <span className="text-[30px]">

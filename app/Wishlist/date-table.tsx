@@ -49,7 +49,7 @@ export const DataTable = (props: Props) => {
               <button className="text-slate-500 transition-all hover:opacity-80">
                 <MdDelete size={25} />
               </button>
-              <button className="flex items-center rounded-md bg-blue-500 px-4 py-2 text-center text-white transition-all hover:opacity-80">
+              <button className="flex items-center rounded-md bg-blue-500 px-4 py-2 text-center text-white shadow-md shadow-md shadow-blue-500 shadow-blue-500 transition-all hover:opacity-80">
                 <MdOutlineShoppingCart />
                 <span>add to card</span>
               </button>
@@ -77,7 +77,7 @@ export const DataTable = (props: Props) => {
               <button className="text-slate-500 transition-all hover:opacity-80">
                 <MdDelete size={25} />
               </button>
-              <button className="flex items-center rounded-md bg-blue-500 px-4 py-2 text-center text-white transition-all hover:opacity-80">
+              <button className="flex items-center rounded-md bg-blue-500 px-4 py-2 text-center text-white shadow-md shadow-blue-500 transition-all hover:opacity-80">
                 <MdOutlineShoppingCart />
                 <span>add to card</span>
               </button>

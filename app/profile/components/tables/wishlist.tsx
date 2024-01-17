@@ -48,7 +48,7 @@ export const Wishlist = (props: Props) => {
               <button className="text-slate-500">
                 <MdDelete size={20} />
               </button>
-              <button className="flex items-center gap-2 rounded-md bg-blue-500 px-4 py-2 text-white transition-all hover:!bg-blue-300">
+              <button className="flex items-center gap-2 rounded-md bg-blue-500 px-4 py-2 text-white shadow-md shadow-blue-500 transition-all hover:!bg-blue-300">
                 <LuShoppingCart />
                 Add to card
               </button>
