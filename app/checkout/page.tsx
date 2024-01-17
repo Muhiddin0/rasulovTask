@@ -152,7 +152,7 @@ const Page = (props: Props) => {
                     <b>Free Shipping $0.00</b>
                     <p className="mt-4">Est. delivery: $Jun 21 – Jul 20</p>
                     <Link className="text-blue-500" href={'/'}>
-                      Get Free Shipped products in Time!
+                      <a>Get Free Shipped products in Time!</a>
                     </Link>
                   </div>
                 </div>
@@ -162,7 +162,7 @@ const Page = (props: Props) => {
                     <b>Free Shipping $0.00</b>
                     <p className="mt-4">Est. delivery: $Jun 21 – Jul 20</p>
                     <Link className="text-blue-500" href={'/'}>
-                      Get Free Shipped products in Time!
+                      <a>Get Free Shipped products in Time!</a>
                     </Link>
                   </div>
                 </div>
@@ -172,7 +172,7 @@ const Page = (props: Props) => {
                     <b>Free Shipping $0.00</b>
                     <p className="mt-4">Est. delivery: $Jun 21 – Jul 20</p>
                     <Link className="text-blue-500" href={'/'}>
-                      Get Free Shipped products in Time!
+                      <a>Get Free Shipped products in Time!</a>
                     </Link>
                   </div>
                 </div>
@@ -182,7 +182,7 @@ const Page = (props: Props) => {
                     <b>Free Shipping $0.00</b>
                     <p className="mt-4">Est. delivery: $Jun 21 – Jul 20</p>
                     <Link className="text-blue-500" href={'/'}>
-                      Get Free Shipped products in Time!
+                      <a>Get Free Shipped products in Time!</a>
                     </Link>
                   </div>
                 </div>

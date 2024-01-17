@@ -137,7 +137,7 @@ export const Controls = (props: Props) => {
             <span>Add another account</span>
           </div>
 
-          <button className="my-2 flex w-full items-center justify-center gap-2 rounded-md bg-slate-200 px-2 py-2 text-black dark:bg-slate-800 dark:text-slate-500 dark:text-white">
+          <button className="my-2 flex w-full items-center justify-center gap-2 rounded-md bg-slate-200 px-2 py-2 text-black dark:bg-slate-800 dark:text-white">
             <FiLogOut />
             <span>Sign out</span>
           </button>
