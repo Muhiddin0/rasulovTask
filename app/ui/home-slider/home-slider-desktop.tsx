@@ -9,9 +9,9 @@ import Image from 'next/image';
 
 type Props = {};
 
-export const HomeSlider = (props: Props) => {
+export const HomeSliderDestop = (props: Props) => {
   return (
-    <div className="container">
+    <div className="container hidden lg:block">
       <Swiper
         modules={[Navigation, Pagination, Autoplay]}
         spaceBetween={50}

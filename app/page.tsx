@@ -9,7 +9,8 @@ import Image from 'next/image';
 
 // *** Assets ***
 import homeBanner from '@/assets/images/banner-home.png';
-import { HomeSlider } from './ui/home-slider/home-slider';
+import { HomeSliderDestop } from './ui/home-slider/home-slider-desktop';
+import { HomeSliderMobile } from './ui/home-slider/home-slider-mobile';
 
 type Props = {};
 
@@ -19,7 +20,8 @@ const Page = (props: Props) => {
       <div className="container!py-10">
         <CatalogPage />
         {/* <Hero /> */}
-        <HomeSlider />
+        <HomeSliderMobile />
+        <HomeSliderDestop />
         <div className="container">
           <div className="grid grid-cols-12">
             <div className="col-span-12 xl:col-span-9">
