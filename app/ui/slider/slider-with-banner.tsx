@@ -72,7 +72,10 @@ export const SliderBanner = (props: Props) => {
         }}
       >
         {products.map((product) => (
-          <SwiperSlide key={product.id}>
+          <SwiperSlide
+            className="!flex items-center justify-center"
+            key={product.id}
+          >
             <Product product={product} />
           </SwiperSlide>
         ))}

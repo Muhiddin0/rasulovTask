@@ -68,9 +68,6 @@ const CatalogPage = () => {
                 </Link>
               </SwiperSlide>
             ))}
-            <div className="absolute top-[23px] w-full">
-              <SliderButtons />
-            </div>
           </Swiper>
         </div>
       </div>

@@ -9,6 +9,7 @@ import Image from 'next/image';
 
 // *** Assets ***
 import homeBanner from '@/assets/images/banner-home.png';
+import { HomeSlider } from './ui/home-slider/home-slider';
 
 type Props = {};
 
@@ -17,7 +18,8 @@ const Page = (props: Props) => {
     <section className="bg-white  dark:bg-[var(--dark-bg)]">
       <div className="container!py-10">
         <CatalogPage />
-        <Hero />
+        {/* <Hero /> */}
+        <HomeSlider />
         <div className="container">
           <div className="grid grid-cols-12">
             <div className="col-span-12 xl:col-span-9">
@@ -27,6 +29,7 @@ const Page = (props: Props) => {
               <Image src={homeBanner} alt="" />
             </div>
           </div>
+          H
         </div>
         <MySlider />
         {/* <ProductPiece /> */}

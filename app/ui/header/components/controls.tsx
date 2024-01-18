@@ -30,7 +30,7 @@ export const Controls = (props: Props) => {
   const [notificationIsOpen, setNotificationIsOpen] = useState<boolean>(false);
 
   return (
-    <div className="flex gap-3 dark:text-[#fff]">
+    <div className="flex w-full justify-between gap-3 dark:text-[#fff] sm:w-auto">
       {/* theme toggler button */}
       <ThemeToggle />
 
