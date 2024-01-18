@@ -1,11 +1,9 @@
 'use client';
-import React, { useEffect, useState } from 'react';
+
+import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Navigation, Pagination } from 'swiper/modules';
 
-import { ProductType } from '@/app/interfaces';
-import Product from '../common/product/product';
-import Link from 'next/link';
 import { SliderButtons } from '../slider/slider-buttons';
 import Image from 'next/image';
 
