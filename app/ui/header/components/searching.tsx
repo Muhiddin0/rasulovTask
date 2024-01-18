@@ -5,7 +5,7 @@ import { CiSearch } from 'react-icons/ci';
 const Searching = () => {
   return (
     <label
-      className="relative order-3 w-[100%] md:order-none md:w-[300px] lg:w-[500px]"
+      className="relative order-3 w-[100%] lg:order-none lg:w-[400px] xl:w-[500px]"
       htmlFor=""
     >
       <input

@@ -1,42 +1,54 @@
 'use client';
 
 import React, { useState } from 'react';
-
-// *** Icons ***
-import { FiShoppingCart } from 'react-icons/fi';
-import { IoMdNotificationsOutline } from 'react-icons/io';
-import { FaRegUser } from 'react-icons/fa6';
+import Image from 'next/image';
+import Link from 'next/link';
 
 // *** */ Assets ***
 import user from '@/assets/images/user.webp';
 
 // *** Utils ***
-import { ThemeToggle } from '../../swith-mode/mode-button';
-import Image from 'next/image';
+
+// Theme button
+import DayNightToggle from 'react-day-and-night-toggle';
 
 // *** Icons ***
 import { CiUser } from 'react-icons/ci';
 import { FiLogOut } from 'react-icons/fi';
-import { TfiDashboard } from 'react-icons/tfi';
 import { GrSecure } from 'react-icons/gr';
 import { IoIosHelpCircleOutline } from 'react-icons/io';
 import { IoMdPersonAdd } from 'react-icons/io';
-import Link from 'next/link';
+import { FaRegHeart } from 'react-icons/fa6';
+import { FiShoppingCart } from 'react-icons/fi';
+import { IoMdNotificationsOutline } from 'react-icons/io';
+import { FaRegUser } from 'react-icons/fa6';
 
-type Props = {};
+type Props = {
+  isDarkMode: boolean;
+  toggleTheme: () => void;
+};
 
-export const Controls = (props: Props) => {
+export const Controls = ({ isDarkMode, toggleTheme }: Props) => {
   const [profileIsOpnen, setProfileIsOpen] = useState<boolean>(false);
   const [notificationIsOpen, setNotificationIsOpen] = useState<boolean>(false);
 
   return (
-    <div className="flex w-full justify-between gap-3 dark:text-[#fff] sm:w-auto">
+    <div className="flex w-full items-center justify-between gap-3 dark:text-[#fff] sm:w-auto">
       {/* theme toggler button */}
-      <ThemeToggle />
+      <DayNightToggle
+        shadows={false}
+        onChange={toggleTheme}
+        checked={isDarkMode}
+        className="hidden sm:block"
+      />
+
+      <Link href={'/'}>
+        <FaRegHeart size={20} />
+      </Link>
 
       {/* Shoping card */}
       <button className="relative">
-        <span className="absolute right-[-30%] top-[-7%] flex h-[18px] w-[18px] items-center justify-center rounded-full bg-blue-500 text-[14px] text-white">
+        <span className="absolute right-[-50%] top-[-40%] flex h-[18px] w-[18px] items-center justify-center rounded-full bg-blue-500 text-[14px] text-white">
           2
         </span>
         <FiShoppingCart size={20} />

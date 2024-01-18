@@ -31,7 +31,6 @@ const Page = (props: Props) => {
               <Image src={homeBanner} alt="" />
             </div>
           </div>
-          H
         </div>
         <MySlider />
         {/* <ProductPiece /> */}

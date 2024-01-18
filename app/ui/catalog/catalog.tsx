@@ -35,9 +35,10 @@ const CatalogPage = () => {
             pagination={{ clickable: true }}
             className="!pb-14 !pt-4"
             breakpoints={{
-              380: {
-                width: 380,
-                slidesPerView: 4,
+              400: {
+                width: 400,
+                slidesPerView: 5,
+                spaceBetween: 5,
               },
               497: {
                 width: 497,

@@ -21,7 +21,6 @@ type Props = {};
 export const Navbar = (props: Props) => {
   const [navIsActivate, setNavIsActive] = useState<boolean>(false);
   const [categoryIsOpen, setCategoryIsOpen] = useState<boolean>(false);
-  const [showContent, setShowContent] = useState<number>(3);
 
   return (
     <div className="bg-white py-3 dark:bg-[#141824] dark:text-slate-300">

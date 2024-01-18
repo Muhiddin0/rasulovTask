@@ -11,7 +11,7 @@ type Props = {};
 
 export const HomeSliderMobile = (props: Props) => {
   return (
-    <div className="container block lg:hidden">
+    <div className="container block md:hidden">
       <Swiper
         modules={[Navigation, Pagination, Autoplay]}
         spaceBetween={50}
@@ -32,7 +32,7 @@ export const HomeSliderMobile = (props: Props) => {
               height={500}
               alt="gallery"
               className="block h-auto !w-full object-cover object-center"
-              src="https://dummyimage.com/500x500"
+              src="https://dummyimage.com/500x400"
             />
           </SwiperSlide>
         ))}

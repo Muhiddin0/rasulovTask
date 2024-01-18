@@ -34,12 +34,6 @@ export const navItems: {
     yClass: 'block md:hidden',
   },
   {
-    link: '/Wishlist',
-    title: 'Wishlist',
-    xClass: 'hidden md:block',
-    yClass: 'block md:hidden',
-  },
-  {
     link: '/shipping-info',
     title: 'Shipping Info',
     xClass: 'hidden lg:block',

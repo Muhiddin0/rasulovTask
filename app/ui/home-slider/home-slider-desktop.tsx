@@ -11,7 +11,7 @@ type Props = {};
 
 export const HomeSliderDestop = (props: Props) => {
   return (
-    <div className="container hidden lg:block">
+    <div className="container hidden md:block">
       <Swiper
         modules={[Navigation, Pagination, Autoplay]}
         spaceBetween={50}

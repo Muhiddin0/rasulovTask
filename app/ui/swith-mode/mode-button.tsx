@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react';
 import { IoSunnyOutline } from 'react-icons/io5';
 
 export const ThemeToggle = () => {
-  const [isDarkMode, setIsDarkMode] = useState(false);
+  const [isDarkMode, setIsDarkMode] = useState(true);
 
   useEffect(() => {
     // Check if the user has a preference for dark mode

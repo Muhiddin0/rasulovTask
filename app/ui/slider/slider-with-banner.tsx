@@ -58,8 +58,9 @@ export const SliderBanner = (props: Props) => {
         slidesPerView={1}
         navigation
         pagination={{ clickable: true }}
-        className="!pb-12 !pt-2"
+        className="!pb-16 !pt-2 sm:!pb-12"
         loop={true}
+        initialSlide={1}
         breakpoints={{
           450: {
             width: 450,
@@ -68,6 +69,10 @@ export const SliderBanner = (props: Props) => {
           800: {
             width: 800,
             slidesPerView: 3,
+          },
+          1000: {
+            width: 1000,
+            slidesPerView: 4,
           },
         }}
       >

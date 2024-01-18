@@ -1,8 +1,9 @@
 'use client';
 
 import React, { useEffect, useState } from 'react';
-import { Swiper, SwiperSlide } from 'swiper/react';
+import { Swiper, SwiperSlide, useSwiper } from 'swiper/react';
 import { Navigation, Pagination } from 'swiper/modules';
+import SwiperCore from 'swiper';
 
 import { ProductType } from '@/app/interfaces';
 import Product from '../common/product/product';
@@ -12,6 +13,9 @@ import Link from 'next/link';
 import { IoFlash } from 'react-icons/io5';
 import { IoIosArrowForward } from 'react-icons/io';
 import { SliderButtons } from './slider-buttons';
+
+// Install Swiper modules
+SwiperCore.use([Navigation, Pagination]);
 
 const MySwiper = () => {
   const [products, setProducts] = useState<ProductType[] | []>([]);
@@ -23,8 +27,6 @@ const MySwiper = () => {
         setProducts(data);
       });
   }, []);
-
-  const [swiper, setSwiper] = useState<typeof Swiper>();
 
   return (
     <section>
@@ -54,7 +56,11 @@ const MySwiper = () => {
           navigation
           loop={true}
           pagination={{ clickable: true }}
-          className="!pb-12 !pt-4"
+          className="!pb-16 !pt-4 sm:!pb-12"
+          onSlideChange={() => {
+            console.log('slide change');
+          }}
+          centeredSlides={true}
           breakpoints={{
             450: {
               width: 450,

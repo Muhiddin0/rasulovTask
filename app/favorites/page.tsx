@@ -27,7 +27,7 @@ const Page = (props: Props) => {
           <p className="text-slate-500">Essential for a better life</p>
         </div>
 
-        <div className="mt-12 grid grid-cols-1 grid-rows-1 gap-x-4 gap-y-10 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-7 2xl:grid-cols-8">
+        <div className="mt-12 grid grid-cols-2 grid-rows-1 gap-x-4 gap-y-10 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-7 2xl:grid-cols-8">
           <div className="flex flex-col">
             <Image
               className="w-full rounded-md border-[1px] border-slate-300 object-contain p-3"
