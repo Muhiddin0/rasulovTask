@@ -12,7 +12,7 @@ import { MdOtherHouses } from 'react-icons/md';
 
 export type TCatalog = {
   title: string;
-  icon: string;
+  icon: any;
   link: string;
 };
 
