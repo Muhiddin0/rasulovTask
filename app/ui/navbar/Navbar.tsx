@@ -139,7 +139,12 @@ export const Navbar = (props: Props) => {
               >
                 {navItems.map((e, i) => (
                   <li className={`${e.yClass} my-3 w-[200px]`} key={i}>
-                    <ActiveLink href={e.link}>{e.title}</ActiveLink>
+                    <ActiveLink
+                      handleToggleCateogry={handleToggleCateogry}
+                      href={e.link}
+                    >
+                      {e.title}
+                    </ActiveLink>
                   </li>
                 ))}
               </ul>
