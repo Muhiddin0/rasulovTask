@@ -9,9 +9,9 @@ export const fetchProducts = () => async (dispatch: AppDispatch) => {
       'https://fakestoreapi.com/products',
     );
     dispatch(ProductsSlice.actions.productsFetchingSucces(response.data));
-  } catch (e) {
+  } catch {
     dispatch(
-      ProductsSlice.actions.productsFetchingError([{ message: e.message }]),
+      ProductsSlice.actions.productsFetchingError([{ message: 'Error Fetch' }]),
     );
   }
 };
