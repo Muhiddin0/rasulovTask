@@ -22,6 +22,10 @@ export const Navbar = (props: Props) => {
   const [navIsActivate, setNavIsActive] = useState<boolean>(false);
   const [categoryIsOpen, setCategoryIsOpen] = useState<boolean>(false);
 
+  function handleToggleCateogry() {
+    setCategoryIsOpen(!categoryIsOpen);
+  }
+
   return (
     <div className="bg-white py-3 dark:bg-[#141824] dark:text-slate-300">
       <div className="container relative flex justify-between">
@@ -105,7 +109,12 @@ export const Navbar = (props: Props) => {
           <ul className="flex gap-6">
             {navItems.map((e, i) => (
               <li className={e.xClass} key={i}>
-                <ActiveLink href={e.link}>{e.title}</ActiveLink>
+                <ActiveLink
+                  handleToggleCateogry={handleToggleCateogry}
+                  href={e.link}
+                >
+                  {e.title}
+                </ActiveLink>
               </li>
             ))}
 
