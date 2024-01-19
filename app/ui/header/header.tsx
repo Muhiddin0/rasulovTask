@@ -9,6 +9,7 @@ import { Controls } from './components/controls';
 
 // Theme button
 import DayNightToggle from 'react-day-and-night-toggle';
+import { Category } from '../navbar/category';
 
 export const Header = () => {
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -20,7 +21,7 @@ export const Header = () => {
 
   return (
     <header className="">
-      <div className="container flex flex-wrap items-center justify-center gap-4 !py-5 dark:text-slate-50 sm:justify-between">
+      <div className="container relative flex flex-wrap items-center justify-center gap-4 !py-5 dark:text-slate-50 sm:justify-between">
         <div className="inline-flex w-full items-center justify-between sm:w-auto">
           <Logo />
           <DayNightToggle
@@ -30,6 +31,8 @@ export const Header = () => {
             className="block sm:hidden"
           />
         </div>
+
+        <Category />
 
         <Searching />
         <Controls isDarkMode={isDarkMode} toggleTheme={toggleTheme} />

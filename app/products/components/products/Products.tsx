@@ -6,24 +6,12 @@ import axios from 'axios';
 
 import { ProductItems } from './products-items';
 import { CiFilter } from 'react-icons/ci';
-import { ProductType } from '@/app/interfaces';
-
+import { useAppSelector } from '@/app/hooks';
 type Props = {};
 
-export const Products = (props: Props) => {
-  const [products, setProducts] = useState<ProductType[] | false>(false);
-
-  useEffect(() => {
-    axios.get('https://fakestoreapi.com/products').then((response) => {
-      let { data } = response;
-      console.log(data);
-      setProducts(data);
-    });
-
-    return () => {
-      products;
-    };
-  }, []);
+export const Products = async (props: Props) => {
+  const { products } = useAppSelector((state) => state.products);
+  const { loading } = useAppSelector((state) => state.products.status);
 
   const toggler = () => {
     document.querySelector('.filter')?.classList.toggle('active');
@@ -59,7 +47,7 @@ export const Products = (props: Props) => {
             />
           ))}
 
-        {!products && (
+        {loading && (
           <>
             <div className="col-span-1">
               <div className="max-w-sm animate-pulse overflow-hidden rounded shadow-lg">

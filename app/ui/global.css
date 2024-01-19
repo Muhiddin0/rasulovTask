@@ -12,10 +12,7 @@
   margin: 0 auto;
 }
 
-.swiper-pagination-bullet {
-  @apply dark:bg-slate-300;
-}
-
+/* Products */
 .product-hover img {
   position: relative;
   z-index: 0;
@@ -27,9 +24,24 @@
   scale: 1.1;
 }
 
+/* Swiper js */
 .swiper-button-next,
 .swiper-button-prev {
   display: none !important;
+}
+.swiper-pagination-bullet {
+  @apply dark:bg-slate-300;
+}
+
+/* Disables & Actives */
+@media (max-width: 1024px) {
+  .filter-sm {
+    left: -120%;
+    transition: 250ms;
+  }
+  .filter-sm.active {
+    left: 0;
+  }
 }
 
 .disable {

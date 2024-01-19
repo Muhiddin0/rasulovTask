@@ -14,20 +14,14 @@ import { IoFlash } from 'react-icons/io5';
 import { IoIosArrowForward } from 'react-icons/io';
 import { SliderButtons } from './slider-buttons';
 
+// *** RTK ***
+import { useAppSelector } from '@/app/hooks';
+
 // Install Swiper modules
 SwiperCore.use([Navigation, Pagination]);
 
 const MySwiper = () => {
-  const [products, setProducts] = useState<ProductType[] | []>([]);
-
-  useEffect(() => {
-    fetch('https://fakestoreapi.com/products')
-      .then((response) => response.json())
-      .then((data) => {
-        setProducts(data);
-      });
-  }, []);
-
+  const { products } = useAppSelector((state) => state.products);
   return (
     <section>
       <div className="container !py-12">

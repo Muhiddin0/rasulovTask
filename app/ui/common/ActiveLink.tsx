@@ -5,7 +5,15 @@ import { usePathname } from 'next/navigation';
 import Link from 'next/link';
 import clsx from 'clsx';
 
-const ActiveLink = ({ href, children }: { href: string; children: string }) => {
+const ActiveLink = ({
+  href,
+  children,
+  handleToggleCateogry,
+}: {
+  href: string;
+  children: string;
+  handleToggleCateogry: () => void;
+}) => {
   const pathname = usePathname();
   const isActive = pathname === href;
 
@@ -15,7 +23,7 @@ const ActiveLink = ({ href, children }: { href: string; children: string }) => {
         'text-blue-500': isActive,
       })}
       href={href}
-      passHref
+      onClick={handleToggleCateogry}
     >
       {children}
     </Link>

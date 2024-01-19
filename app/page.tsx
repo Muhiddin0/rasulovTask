@@ -1,25 +1,35 @@
-import React from 'react';
-import Hero from './ui/hero';
+'use client';
+import React, { useEffect } from 'react';
+import Image from 'next/image';
+
+// *** UI ***
 import CatalogPage from './ui/catalog/catalog';
-import { ProductPiece } from './ui/product-piece/product-piece';
 import { Banner } from './ui/banner';
 import MySlider from './ui/slider/slider';
 import { SliderBanner } from './ui/slider/slider-with-banner';
-import Image from 'next/image';
 
 // *** Assets ***
 import homeBanner from '@/assets/images/banner-home.png';
 import { HomeSliderDestop } from './ui/home-slider/home-slider-desktop';
 import { HomeSliderMobile } from './ui/home-slider/home-slider-mobile';
 
+// *** Hooks ***
+import { useAppDispatch } from './hooks';
+import { fetchProducts } from './lib/features/products/ActionCreator';
+
 type Props = {};
 
 const Page = (props: Props) => {
+  const dispatch = useAppDispatch();
+
+  useEffect(() => {
+    dispatch(fetchProducts());
+  }, []);
+
   return (
     <section className="bg-white  dark:bg-[var(--dark-bg)]">
       <div className="container!py-10">
         <CatalogPage />
-        {/* <Hero /> */}
         <HomeSliderMobile />
         <HomeSliderDestop />
         <div className="container">
@@ -33,7 +43,6 @@ const Page = (props: Props) => {
           </div>
         </div>
         <MySlider />
-        {/* <ProductPiece /> */}
         <Banner />
       </div>
     </section>

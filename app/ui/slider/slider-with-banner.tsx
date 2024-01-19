@@ -4,9 +4,13 @@ import React, { useEffect, useRef, useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination } from 'swiper/modules';
 
-import { ProductType } from '@/app/interfaces';
 import Product from '../common/product/product';
 import Link from 'next/link';
+
+// *** React ***
+import { ProductType } from '@/app/interfaces';
+import { useAppDispatch, useAppSelector } from '@/app/hooks';
+import { fetchProducts } from '@/app/lib/features/products/ActionCreator';
 
 // *** Icons ***
 import { IoIosArrowForward } from 'react-icons/io';
@@ -18,18 +22,7 @@ import { SliderButtons } from './slider-buttons';
 type Props = {};
 
 export const SliderBanner = (props: Props) => {
-  const [products, setProducts] = useState<ProductType[] | []>([]);
-
-  useEffect(() => {
-    fetch('https://fakestoreapi.com/products')
-      .then((response) => response.json())
-      .then((data) => {
-        console.log(data);
-        setProducts(data);
-      });
-  }, []);
-
-  const [swiper, setSwiper] = useState<typeof Swiper>();
+  const { products } = useAppSelector((state) => state.products);
 
   return (
     <div>

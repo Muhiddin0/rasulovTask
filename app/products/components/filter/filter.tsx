@@ -18,7 +18,7 @@ export const Filter = (props: Props) => {
 
   return (
     <div
-      className={`fixed left-0 top-0 z-[100000000] flex h-screen w-full bg-[var(--transparent)] filter lg:relative lg:h-screen lg:w-[300px] lg:bg-transparent`}
+      className={`fixed left-0 top-0 z-[100] flex h-screen w-full bg-[var(--transparent)] filter lg:relative lg:h-screen lg:w-[300px] lg:bg-transparent`}
     >
       <div className="flex h-screen w-[300px] flex-col overflow-auto bg-white p-4 dark:bg-gray-900 lg:w-full lg:bg-transparent lg:p-0 lg:dark:bg-transparent">
         <div className="mb-6 flex justify-end lg:hidden">
