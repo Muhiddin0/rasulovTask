@@ -60,9 +60,7 @@ const Page = (props: Props) => {
               }}
               defaultCenter={defaultProps.center}
               defaultZoom={defaultProps.zoom}
-            >
-              <AnyReactComponent text="My Marker" />
-            </GoogleMapReact>
+            ></GoogleMapReact>
           </div>
           <div className="flex flex-col gap-0">
             <ListItem
