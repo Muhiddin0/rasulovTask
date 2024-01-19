@@ -22,6 +22,9 @@ import { FaRegHeart } from 'react-icons/fa6';
 import { FiShoppingCart } from 'react-icons/fi';
 import { IoMdNotificationsOutline } from 'react-icons/io';
 import { FaRegUser } from 'react-icons/fa6';
+import { BsBagCheck } from 'react-icons/bs';
+import { CiHeart } from 'react-icons/ci';
+import { FaCartFlatbedSuitcase } from 'react-icons/fa6';
 
 type Props = {
   isDarkMode: boolean;
@@ -126,6 +129,30 @@ export const Controls = ({ isDarkMode, toggleTheme }: Props) => {
                   <CiUser />
                 </span>
                 <span>Profile</span>
+              </Link>
+            </li>
+            <li className="">
+              <Link className="flex items-center gap-1" href={'/shipping-info'}>
+                <span>
+                  <BsBagCheck />
+                </span>
+                <span>Shipping Info</span>
+              </Link>
+            </li>
+            <li className="">
+              <Link className="flex items-center gap-1" href={'/favorites'}>
+                <span>
+                  <CiHeart />
+                </span>
+                <span>My Favorite Stores</span>
+              </Link>
+            </li>
+            <li className="">
+              <Link className="flex items-center gap-1" href={'/track-order'}>
+                <span>
+                  <FaCartFlatbedSuitcase />
+                </span>
+                <span>Track order</span>
               </Link>
             </li>
             <li className="flex items-center gap-1">

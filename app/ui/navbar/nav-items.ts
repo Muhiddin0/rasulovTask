@@ -22,28 +22,10 @@ export const navItems: {
     yClass: 'block min-[350px]:hidden',
   },
   {
-    link: '/favorites',
-    title: 'My Favorite Stores',
-    xClass: 'hidden min-[500px]:block',
-    yClass: 'block min-[500px]:hidden',
-  },
-  {
     link: '/products',
     title: 'Products',
     xClass: 'hidden md:block',
     yClass: 'block md:hidden',
-  },
-  {
-    link: '/shipping-info',
-    title: 'Shipping Info',
-    xClass: 'hidden lg:block',
-    yClass: 'block lg:hidden',
-  },
-  {
-    link: '/track-order',
-    title: 'Track order',
-    xClass: 'hidden lg:block',
-    yClass: 'block lg:hidden',
   },
   {
     link: '/checkout',

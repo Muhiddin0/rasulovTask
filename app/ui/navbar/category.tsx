@@ -47,7 +47,7 @@ export const Category = (props: Props) => {
       >
         <span className="first-letter: absolute left-[240px] top-[-12px] h-[1.5rem] w-[1.5rem] rotate-45 border-l-[1px] border-t-[1px] border-slate-400 bg-white dark:bg-[#141824]"></span>
 
-        <ul className="mt-4">
+        <ul className="mt-4 grid grid-cols-1">
           {navItems.map((e, i) => (
             <li className={e.xClass} key={i}>
               <ActiveLink
